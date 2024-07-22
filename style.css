@@ -1,0 +1,157 @@
+@import url("https://use.fontawesome.com/releases/v6.1.2/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Roboto&family=Pixelify+Sans&display=swap');
+
+.platin-card h1 {
+  text-align: left;
+  margin: 8px 0 0 16px;
+}
+
+h1, h2, h3 {
+  font-family: 'Chakra Petch';
+  margin-bottom: 8px;
+}
+
+body {
+  font-family: "Roboto";
+  background: linear-gradient(0deg, #2D3047 0%, #7798AB 100%);
+}
+
+.platin-card {
+  background: #EAEAEA;
+  text-align: center;
+  border-radius: 4px;
+  padding: 16px 32px 32px 32px;
+  margin: 16px 0;
+  /* background: #7798AB;
+  text-align: center;
+  border-radius: 4px;
+  padding: 16px 32px 32px 32px;
+  margin: 16px 0; */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.platin-card-static {
+  background: #EAEAEA;
+  text-align: center;
+  position: fixed;
+  /* clear: both; */
+  top: 5px;
+  border-radius: 4px;
+  padding: 16px 32px 32px 72px;
+  margin: 16px 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.rpg-textbox {
+  font-family: 'Pixelify Sans';
+  font-size: 20px;
+  background-color: rgb(57, 52, 52, 0.6);
+  color: #EAEAEA;
+  border: solid;
+  border-color: #3C393D;
+  padding: 16px;
+}
+
+.img-rounded {
+  border-radius: 4px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-red {
+  color: #FFF2DE;
+  background-color: #EE4266;
+  padding: 8px;
+  margin: auto;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+.header-image {
+  text-align: center;
+  width: 40px;
+  height: 25px;
+  object-fit: cover;
+}
+
+.btn-red:hover {
+  color: #f1e5d2;
+  background-color: #db3b5e;
+  transition-duration: 0.5s;
+}
+
+.container {
+  width: 700px;
+  margin: auto;
+}
+
+.hover-text::before {
+  content: "Take this, your princess is another barrel roll.";
+}
+
+.hover-text:hover::before {
+  content: "I waste my life on video games.";
+}
+
+ul {
+  list-style-type: none;
+  font-size: 42px;
+  margin: 0;
+  padding-left: 0;
+}
+
+li  {
+  display: inline;
+  font-size: 24px;
+  margin: 0 8px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+    transition: ease all .2s;
+  }
+
+  .platin-card-static {
+    display: none;
+    transition: .2s;
+  }
+  .img-rounded {
+    border-radius: 4px;
+    width: relative;
+    height: relative;
+    object-fit: cover;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+    transition: ease all .2s;
+  }
+
+  .platin-card-static {
+    display: none;
+    transition: .2s;
+  }
+  .img-rounded {
+    border-radius: 4px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: ease all .2s;
+  }
+}
